@@ -14,7 +14,7 @@ jobs:
       - name: panvimdoc
         uses: kdheepak/panvimdoc@main
         with:
-          vimdoc: pairs.nvim
+          vimdoc: pairs
           version: "Neovim >= 0.8.0(i think)"
           demojify: true
           treesitter: true
