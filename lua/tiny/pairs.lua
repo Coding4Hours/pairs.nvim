@@ -1,11 +1,20 @@
 --[[
-This module provides a minimal, self-contained autopair implementation.
-It handles opening, closing, and deleting pairs.
+the smallest pair plugin in the universe
 --]]
 
 local M = {}
 
-local config = require("pairs.config")
+local config {
+  enabled = true,
+  pairs = {
+    ['('] = ')',
+    ['['] = ']',
+    ['{'] = '}',
+    ['"'] = '"',
+    ["'"] = "'",
+    ['`'] = '`',
+  },
+}
 
 local function autopairs_open(open_char)
   local close_char = config.pairs[open_char]
