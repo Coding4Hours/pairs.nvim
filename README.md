@@ -1,2 +1,2 @@
-## pairs.nvim
-This is the README for pairs.nvim
+## tiny.pairs
+a tiny pairs plugin written with 100% lua pretty sure is under 200 lines
