@@ -4,7 +4,7 @@ the smallest pair plugin in the universe
 
 local M = {}
 
-local config {
+local config = {
   enabled = true,
   pairs = {
     ['('] = ')',
