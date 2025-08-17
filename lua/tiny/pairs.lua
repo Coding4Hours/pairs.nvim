@@ -5,7 +5,6 @@ the smallest pair plugin in the universe
 local M = {}
 
 local config = {
-  enabled = true,
   pairs = {
     ['('] = ')',
     ['['] = ']',
@@ -82,14 +81,6 @@ function M.mappairs()
   map('i', '<BS>', autopairs_bs, opts)
 end
 
-function M.setup(opts)
-  if opts then
-    config = vim.tbl_deep_extend("force", config, opts)
-  end
-
-  if config.enabled then
-    M.mappairs()
-  end
-end
+M.mappairs()
 
 return M
