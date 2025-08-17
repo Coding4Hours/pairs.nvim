@@ -81,6 +81,14 @@ function M.mappairs()
   map('i', '<BS>', autopairs_bs, opts)
 end
 
-M.mappairs()
+function M.setup(opts)
+  if opts then
+    config = vim.tbl_deep_extend("force", config, opts)
+  end
+
+  if config.enabled then
+    M.mappairs()
+  end
+end
 
 return M
