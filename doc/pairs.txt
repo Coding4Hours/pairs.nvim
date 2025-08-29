@@ -1,4 +1,4 @@
-*pairs.txt*      For Neovim >= 0.8.0(i think)      Last change: 2025 August 17
+*pairs.txt*      For Neovim >= 0.8.0(i think)      Last change: 2025 August 29
 
 ==============================================================================
 Table of Contents                                    *pairs-table-of-contents*
